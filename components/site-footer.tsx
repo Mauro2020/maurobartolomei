@@ -66,7 +66,9 @@ export function SiteFooter() {
                   rel="noreferrer"
                   className="font-medium text-cyan transition hover:text-white"
                 >
-                  {locale === "it" ? "Scopri ABEDOME ↗" : "Discover ABEDOME ↗"}
+                  {locale === "it"
+                    ? "ABEDOME — analisi e progettazione integrata per la casa"
+                    : "ABEDOME — integrated analysis and design for the home"}
                 </a>
               </p>
             </div>

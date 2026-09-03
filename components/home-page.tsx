@@ -17,7 +17,7 @@ import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
-import { ABEDOME_URL } from "@/lib/brand";
+import { ABEDOME_CHECKUP_URL, ABEDOME_URL } from "@/lib/brand";
 import { getLocalizedPath, locales, type AppPath, type Locale } from "@/lib/i18n";
 
 type HomePageProps = {
@@ -205,31 +205,6 @@ export function HomePage({ locale }: HomePageProps) {
       ];
 
   const servicePreview = shared.services.slice(0, 5);
-  const abedomeContent = isItalian
-    ? {
-        eyebrow: "Progetto residenziale",
-        title: "ABEDOME: energia, comfort, controllo e sicurezza progettati come un solo sistema.",
-        description:
-          "ABEDOME è il progetto di Bartolomei Systems dedicato alla casa. Coordina fotovoltaico, accumulo, climatizzazione, domotica Home Assistant, accessi e sicurezza con controllo locale e un percorso tecnico costruito sull’abitazione reale.",
-        features: [
-          "Impianti e automazioni coordinati prima dell’acquisto dei componenti",
-          "Controllo locale, dati comprensibili e continuità operativa",
-          "Progettazione su misura, espandibile insieme alla casa",
-        ],
-        cta: "Visita ABEDOME",
-      }
-    : {
-        eyebrow: "Residential project",
-        title: "ABEDOME: energy, comfort, control, and security designed as one system.",
-        description:
-          "ABEDOME is the Bartolomei Systems project dedicated to the home. It coordinates solar, storage, climate, Home Assistant automation, access, and security through local control and a design process grounded in the real building.",
-        features: [
-          "Systems and automations coordinated before components are purchased",
-          "Local control, understandable data, and operational continuity",
-          "A tailored architecture designed to evolve with the home",
-        ],
-        cta: "Visit ABEDOME",
-      };
   const architectureLayers = isItalian
     ? [
         {
@@ -529,6 +504,23 @@ export function HomePage({ locale }: HomePageProps) {
         primary: content.finalCta.primary,
         secondary: "Explore projects",
       };
+  const residentialPath = isItalian
+    ? {
+        eyebrow: "Percorso residenziale · ABEDOME",
+        title: "Hai una casa da progettare o migliorare?",
+        description:
+          "Per chi sta costruendo, ristrutturando o vuole mettere ordine tra energia, comfort, domotica e sicurezza, ABEDOME offre un primo percorso di analisi pensato per leggere la casa come un unico sistema.",
+        primary: "Scopri ABEDOME",
+        secondary: "Fai il check-up gratuito",
+      }
+    : {
+        eyebrow: "Residential journey · ABEDOME",
+        title: "Are you designing or improving a home?",
+        description:
+          "For people who are building, renovating, or want to bring clarity to energy, comfort, home automation, and security, ABEDOME offers an initial analysis designed to understand the home as one integrated system.",
+        primary: "Discover ABEDOME",
+        secondary: "Start the free check-up",
+      };
 
   return (
     <>
@@ -713,43 +705,6 @@ export function HomePage({ locale }: HomePageProps) {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section-space pt-0">
-        <div className="container-shell">
-          <Reveal>
-            <div className="relative overflow-hidden rounded-[2rem] border border-cyan/20 bg-[linear-gradient(135deg,rgba(52,217,255,0.12),rgba(255,255,255,0.035)_48%,rgba(7,16,29,0.9))] p-8 sm:p-10 lg:p-12">
-              <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-cyan/10 blur-3xl" />
-              <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-                <div>
-                  <p className="section-label">{abedomeContent.eyebrow}</p>
-                  <p className="mt-5 text-sm font-semibold uppercase tracking-[0.3em] text-cyan">ABEDOME</p>
-                  <h2 className="section-title mt-4 max-w-3xl">{abedomeContent.title}</h2>
-                  <p className="section-copy mt-6 max-w-[46rem]">{abedomeContent.description}</p>
-                </div>
-                <div>
-                  <ul className="grid gap-3 text-sm leading-7 text-white/75">
-                    {abedomeContent.features.map((feature) => (
-                      <li key={feature} className="flex gap-3 rounded-2xl border border-white/8 bg-black/10 px-4 py-3">
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={ABEDOME_URL}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button-primary mt-6"
-                  >
-                    {abedomeContent.cta}
-                    <ArrowRight className="h-4 w-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -1134,6 +1089,28 @@ export function HomePage({ locale }: HomePageProps) {
                 <Link href={getLocalizedPath(locale, "/projects")} className="button-secondary">
                   {finalCtaContent.secondary}
                 </Link>
+              </div>
+              <div className="relative mt-10 rounded-[1.75rem] border border-cyan/18 bg-black/15 p-6 sm:p-8">
+                <p className="text-[11px] uppercase tracking-[0.3em] text-cyan">{residentialPath.eyebrow}</p>
+                <h3 className="mt-4 max-w-2xl text-2xl font-semibold tracking-[-0.025em] text-white sm:text-3xl">
+                  {residentialPath.title}
+                </h3>
+                <p className="mt-4 max-w-[46rem] leading-8 text-white/70">{residentialPath.description}</p>
+                <div className="mt-7 flex flex-wrap gap-4">
+                  <a href={ABEDOME_URL} target="_blank" rel="noreferrer" className="button-primary">
+                    {residentialPath.primary}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                  <a
+                    href={ABEDOME_CHECKUP_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button-secondary"
+                  >
+                    {residentialPath.secondary}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </Reveal>

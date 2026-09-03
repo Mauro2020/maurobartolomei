@@ -118,6 +118,7 @@ type LocaleSiteContent = {
     hero: HeroContent;
     heading: string;
     body: string;
+    context: string;
     features: string[];
   };
   customElectronics: {
@@ -205,10 +206,10 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         description:
           "Consulenza specialistica per sistemi smart home con Home Assistant, elettronica ESP32 personalizzata, monitoraggio energia e integrazioni avanzate.",
       },
-      heroBadge: "ABEDOME. Smart Home. Energia. JetGrid.",
+      heroBadge: "Home Assistant. ESP32. Energia. Reti. Sicurezza.",
       heroTitle: "Smart home progettate come infrastrutture intelligenti, non come semplici insiemi di dispositivi.",
       heroDescription:
-        "ABEDOME porta queste competenze nella casa: Home Assistant coordina il sistema, l’elettronica ESP32 estende ciò che il mercato standard non copre e l’energia viene letta e automatizzata con criterio. JetGrid definisce la visione verso ciò che viene dopo.",
+        "Bartolomei Systems sviluppa architetture tecniche ad alta specializzazione: controllo locale, elettronica su misura, reti affidabili, energia, sicurezza e automazioni avanzate progettate come un unico sistema.",
       primaryCta: "Prenota una consulenza",
       secondaryCta: "Scopri i servizi",
       startupMetrics: [
@@ -346,17 +347,18 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Domotica",
         description:
-          "ABEDOME e progettazione di sistemi smart home con Home Assistant, automazioni locali, dashboard personalizzate e integrazioni affidabili.",
+          "Progettazione tecnica di sistemi Home Assistant, automazioni locali, dashboard personalizzate, elettronica su misura e integrazioni affidabili.",
       },
       hero: {
         eyebrow: "Domotica",
         title: "Sistemi smart home con Home Assistant progettati per essere chiari, stabili e davvero utili.",
         description:
-          "Home Assistant è il cuore tecnico della smart home. ABEDOME traduce questa architettura in un sistema coordinato per energia, comfort, controllo e sicurezza.",
+          "Bartolomei Systems progetta il livello tecnico della smart home: controllo locale, integrazioni affidabili, reti, dashboard, elettronica dedicata e automazioni evolute.",
         primaryCta: { label: "Progetta la tua smart home", href: "/contact" },
       },
       heading: "Cosa comprende",
-      body: "La consulenza copre l’intero sistema smart home: architettura Home Assistant, scelta delle integrazioni, logiche di automazione, dashboard operative e struttura tecnica necessaria per mantenere l’impianto stabile nel tempo. Per le abitazioni, queste competenze convergono in ABEDOME.",
+      body: "La consulenza tecnica copre architettura Home Assistant, scelta delle integrazioni, logiche di automazione, dashboard operative, rete ed elettronica necessarie per mantenere il sistema stabile, leggibile ed estendibile nel tempo.",
+      context: "Bartolomei Systems cura l’architettura tecnica dei sistemi: controllo locale, integrazioni affidabili, elettronica su misura e automazioni evolute. Quando il punto di partenza è l’abitazione nel suo insieme, il percorso può iniziare da ABEDOME, con un’analisi di energia, comfort, sicurezza e priorità progettuali.",
       features: [
         "Architettura Home Assistant locale e affidabile",
         "Automazioni avanzate per luci, clima, presenza e sicurezza",
@@ -623,10 +625,10 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         description:
           "Consulting for Home Assistant, advanced home automation, custom ESP32 hardware, intelligent energy management, and JetGrid vision.",
       },
-      heroBadge: "ABEDOME. Smart Home. Energy. JetGrid.",
+      heroBadge: "Home Assistant. ESP32. Energy. Networks. Security.",
       heroTitle: "Intelligent living systems for homes that feel a generation ahead.",
       heroDescription:
-        "ABEDOME brings this expertise into the home: Home Assistant, custom ESP32 hardware, advanced automation, energy, comfort, and security designed as one coherent system.",
+        "Bartolomei Systems develops highly specialized technical architectures: local control, custom electronics, dependable networks, energy, security, and advanced automation designed as one coherent system.",
       primaryCta: "Book a consultation",
       secondaryCta: "Explore services",
       startupMetrics: [
@@ -764,17 +766,18 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Home Automation",
         description:
-          "ABEDOME and Home Assistant system design, local automation, custom dashboards, and dependable smart-home integrations.",
+          "Technical Home Assistant system design, local automation, custom dashboards, purpose-built electronics, and dependable smart-home integrations.",
       },
       hero: {
         eyebrow: "Home Automation",
         title: "Smart homes engineered to be calm, precise, and dependable.",
         description:
-          "Home Assistant provides the technical control layer. ABEDOME turns it into a coordinated residential system spanning energy, comfort, control, and security.",
+          "Bartolomei Systems designs the technical layer of the smart home: local control, reliable integrations, networks, dashboards, dedicated electronics, and advanced automation.",
         primaryCta: { label: "Plan your smart home", href: "/contact" },
       },
       heading: "What this includes",
-      body: "Smart-home consulting covers architecture, device selection, dashboards, automation logic, and the operational layer required for long-term stability. For residential projects, these capabilities come together through ABEDOME.",
+      body: "Technical consulting covers Home Assistant architecture, integration choices, automation logic, operational dashboards, networking, and electronics required for a system that remains stable, readable, and extensible over time.",
+      context: "Bartolomei Systems is responsible for the technical architecture: local control, dependable integrations, custom electronics, and advanced automation. When the starting point is the home as a whole, the journey can begin with ABEDOME through an analysis of energy, comfort, security, and project priorities.",
       features: [
         "Home Assistant architecture and local-first integrations",
         "Advanced lighting, climate, and presence automations",
