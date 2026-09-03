@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: `%s | ${BRAND_NAME}`,
   },
   description:
-    "Bartolomei Systems progetta architetture Home Assistant, integrazioni locali, elettronica ESP32, reti, sicurezza e sistemi energetici evoluti.",
+    "Bartolomei Systems progetta sistemi intelligenti con integrazioni locali, elettronica ESP32, energia, reti, sicurezza e automazioni evolute.",
   keywords: [
     "Home Assistant consultant",
     "home automation",

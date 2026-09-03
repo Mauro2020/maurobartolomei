@@ -7,13 +7,12 @@ import {
   Cpu,
   House,
   LayoutDashboard,
+  ShieldCheck,
   type LucideIcon,
-  Orbit,
   SunMedium,
   Zap,
 } from "lucide-react";
 
-import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
@@ -41,9 +40,9 @@ export function HomePage({ locale }: HomePageProps) {
   const valueProps = isItalian
     ? [
         {
-          title: "Home Assistant come infrastruttura di controllo",
+          title: "Architettura prima della piattaforma",
           description:
-            "Non una semplice dashboard, ma una piattaforma stabile per integrare dispositivi, scenari, energia e automazioni reali.",
+            "Controllo locale, dati, reti e integrazioni vengono progettati come un sistema stabile prima di scegliere i singoli strumenti.",
         },
         {
           title: "ESP32 dove il mercato standard non arriva",
@@ -58,9 +57,9 @@ export function HomePage({ locale }: HomePageProps) {
       ]
     : [
         {
-          title: "Home Assistant as the control infrastructure",
+          title: "Architecture before platforms",
           description:
-            "Not just a dashboard, but a stable platform for integrating devices, scenarios, energy logic, and real automation.",
+            "Local control, data, networks, and integrations are designed as a stable system before individual tools are selected.",
         },
         {
           title: "ESP32 where standard products fall short",
@@ -77,24 +76,24 @@ export function HomePage({ locale }: HomePageProps) {
   const deepSections: DeepSection[] = isItalian
     ? [
         {
-          eyebrow: "Home Assistant",
-          title: "Una smart home credibile nasce da un sistema centrale ben progettato.",
+          eyebrow: "Architettura di sistema",
+          title: "Un sistema affidabile nasce dall’architettura, non dalla piattaforma.",
           description:
-            "Home Assistant è il centro operativo di una casa intelligente seria: integra dispositivi, sensori, dashboard e logiche avanzate in una struttura locale, leggibile e affidabile.",
+            "Controllo locale, rete, dati, integrazioni e interfacce vengono progettati prima della scelta dei singoli componenti. Home Assistant è uno degli strumenti disponibili quando risponde davvero al contesto.",
           features: [
-            "Architettura Home Assistant locale e robusta",
-            "Dashboard operative per tablet, pannelli a parete e mobile",
-            "Automazioni evolute per presenza, clima, sicurezza e scenari",
+            "Architettura locale, flussi dei dati e priorità operative",
+            "Integrazioni affidabili tra impianti, dispositivi e interfacce",
+            "Automazioni evolute per comfort, energia e sicurezza",
           ],
           href: "/home-automation",
-          cta: "Esplora i sistemi smart home",
+          cta: "Approfondisci domotica e integrazioni",
           icon: House,
         },
         {
           eyebrow: "ESP32",
           title: "Quando serve precisione tecnica, l’hardware viene costruito su misura.",
           description:
-            "ESP32 permette di realizzare elettronica dedicata per sensori, controlli, relè e interfacce speciali, integrata con Home Assistant ed ESPHome in modo pulito e professionale.",
+            "ESP32 permette di realizzare elettronica dedicata per sensori, controlli, relè e interfacce speciali, integrata nei sistemi esistenti in modo pulito e professionale.",
           features: [
             "Schede e moduli per esigenze installative specifiche",
             "Sensori personalizzati, IO dedicati e logiche locali",
@@ -110,7 +109,7 @@ export function HomePage({ locale }: HomePageProps) {
           description:
             "Produzione fotovoltaica, consumi, accumulo e ricarica EV diventano una vera infrastruttura intelligente quando vengono letti, visualizzati e orchestrati come un unico sistema.",
           features: [
-            "Monitoraggio energia e KPI in Home Assistant",
+            "Monitoraggio energia e KPI in dashboard dedicate",
             "Automazioni per fotovoltaico, batterie e priorità dei carichi",
             "Logiche di ricarica EV basate sulla disponibilità reale",
           ],
@@ -119,40 +118,40 @@ export function HomePage({ locale }: HomePageProps) {
           icon: SunMedium,
         },
         {
-          eyebrow: "JetGrid",
-          title: "La visione JetGrid estende la smart home verso infrastrutture più connesse e intelligenti.",
+          eyebrow: "Reti e sicurezza",
+          title: "Affidabilità e sicurezza dipendono anche dall’infrastruttura che non si vede.",
           description:
-            "JetGrid rimane una direzione visionaria ma coerente con il brand: partire dalla qualità tecnica della casa per immaginare reti, edifici ed energia coordinati su scala più ampia.",
+            "Segmentazione di rete, continuità dei servizi, accessi e flussi di sicurezza vengono coordinati con la stessa attenzione riservata alle automazioni e alle interfacce.",
           features: [
-            "Visione infrastrutturale orientata al futuro",
-            "Continuità tra casa intelligente ed ecosistemi energetici",
-            "Posizionamento high-tech credibile e distintivo",
+            "Reti locali progettate per stabilità e manutenzione",
+            "Integrazione tra accessi, allarmi, videocontrollo e notifiche",
+            "Separazione dei servizi e continuità operativa",
           ],
-          href: "/jetgrid-vision",
-          cta: "Leggi la visione JetGrid",
-          icon: Orbit,
+          href: "/services",
+          cta: "Esplora i servizi tecnici",
+          icon: ShieldCheck,
         },
       ]
     : [
         {
-          eyebrow: "Home Assistant",
-          title: "A credible smart home starts with a well-designed control core.",
+          eyebrow: "System Architecture",
+          title: "A dependable system starts with architecture, not a platform.",
           description:
-            "Home Assistant acts as the operational backbone of a serious smart home, integrating devices, sensors, dashboards, and advanced logic into a local, readable, and dependable system.",
+            "Local control, networking, data, integrations, and interfaces are designed before individual components are chosen. Home Assistant is one of the available tools when it fits the context.",
           features: [
-            "Robust local-first Home Assistant architecture",
-            "Operational dashboards for tablets, wall panels, and mobile",
-            "Advanced automations for presence, climate, security, and scenes",
+            "Local architecture, data flows, and operational priorities",
+            "Dependable integration across plants, devices, and interfaces",
+            "Advanced automation for comfort, energy, and security",
           ],
           href: "/home-automation",
-          cta: "Explore smart-home systems",
+          cta: "Explore automation and integrations",
           icon: House,
         },
         {
           eyebrow: "ESP32 Custom",
           title: "When technical precision matters, the hardware is built around the project.",
           description:
-            "ESP32 makes it possible to create dedicated electronics for sensing, control, relays, and special interfaces, integrated cleanly with Home Assistant and ESPHome.",
+            "ESP32 makes it possible to create dedicated electronics for sensing, control, relays, and special interfaces, integrated cleanly into existing systems.",
           features: [
             "Boards and modules for exact installation constraints",
             "Custom sensors, dedicated IO, and edge logic",
@@ -168,7 +167,7 @@ export function HomePage({ locale }: HomePageProps) {
           description:
             "Photovoltaic production, consumption, storage, and EV charging become a real intelligent infrastructure when they are monitored, visualized, and orchestrated as one system.",
           features: [
-            "Energy monitoring and KPIs in Home Assistant",
+            "Energy monitoring and KPIs in dedicated dashboards",
             "Automation for solar, batteries, and load priorities",
             "EV charging logic based on real-time availability",
           ],
@@ -177,31 +176,31 @@ export function HomePage({ locale }: HomePageProps) {
           icon: SunMedium,
         },
         {
-          eyebrow: "JetGrid",
-          title: "JetGrid extends the smart-home practice toward future infrastructure thinking.",
+          eyebrow: "Networks and Security",
+          title: "Reliability and security also depend on the infrastructure users never see.",
           description:
-            "JetGrid remains a visionary but coherent extension of the brand: starting from technical quality at home and projecting that thinking toward connected buildings, energy networks, and coordinated systems.",
+            "Network segmentation, service continuity, access control, and security flows are coordinated with the same care applied to automation and interfaces.",
           features: [
-            "Future-facing infrastructure positioning",
-            "Continuity between smart homes and energy ecosystems",
-            "A credible deep-tech layer for the overall brand",
+            "Local networks designed for stability and maintenance",
+            "Integration across access, alarms, video, and notifications",
+            "Service separation and operational continuity",
           ],
-          href: "/jetgrid-vision",
-          cta: "Read the JetGrid vision",
-          icon: Orbit,
+          href: "/services",
+          cta: "Explore technical services",
+          icon: ShieldCheck,
         },
       ];
 
   const heroStats = isItalian
     ? [
-        { label: "Piattaforma", value: "Home Assistant / ESPHome / MQTT" },
+        { label: "Architettura", value: "Controllo locale / dati / integrazioni" },
         { label: "Hardware", value: "ESP32 personalizzato / sensori / interfacce" },
-        { label: "Energia", value: "FV / accumulo / EV / automazioni" },
+        { label: "Sistemi", value: "Energia / reti / sicurezza / automazioni" },
       ]
     : [
-        { label: "Platform", value: "Home Assistant / ESPHome / MQTT" },
+        { label: "Architecture", value: "Local control / data / integrations" },
         { label: "Hardware", value: "Custom ESP32 / sensors / interfaces" },
-        { label: "Energy", value: "Solar / storage / EV / automation" },
+        { label: "Systems", value: "Energy / networks / security / automation" },
       ];
 
   const servicePreview = shared.services.slice(0, 5);
@@ -216,8 +215,8 @@ export function HomePage({ locale }: HomePageProps) {
           text: "Presenza, scenari, ottimizzazione",
         },
         {
-          title: "Centro di controllo",
-          text: "Home Assistant",
+          title: "Controllo e integrazione",
+          text: "Orchestrazione locale e interoperabilità",
         },
         {
           title: "Elettronica personalizzata",
@@ -246,8 +245,8 @@ export function HomePage({ locale }: HomePageProps) {
           text: "Presence, scenarios, optimization",
         },
         {
-          title: "Control center",
-          text: "Home Assistant",
+          title: "Control and integration",
+          text: "Local orchestration and interoperability",
         },
         {
           title: "Custom electronics",
@@ -276,8 +275,8 @@ export function HomePage({ locale }: HomePageProps) {
         },
         {
           eyebrow: "02",
-          title: "Cervello del sistema",
-          text: "Home Assistant coordina il comportamento della casa: unifica integrazioni, regole, scenari e dashboard in un unico centro di controllo locale e affidabile.",
+          title: "Orchestrazione locale",
+          text: "Il livello di controllo coordina integrazioni, regole, scenari e interfacce in un’architettura locale, leggibile e affidabile.",
           icon: LayoutDashboard,
         },
         {
@@ -302,8 +301,8 @@ export function HomePage({ locale }: HomePageProps) {
         },
         {
           eyebrow: "02",
-          title: "System brain",
-          text: "Home Assistant coordinates the behavior of the house, unifying integrations, rules, scenes, and dashboards in one dependable local control core.",
+          title: "Local orchestration",
+          text: "The control layer coordinates integrations, rules, scenes, and interfaces within a local, readable, and dependable architecture.",
           icon: LayoutDashboard,
         },
         {
@@ -319,7 +318,9 @@ export function HomePage({ locale }: HomePageProps) {
           icon: BatteryCharging,
         },
       ];
-  const technologyStrip = ["Home Assistant", "ESP32", "MQTT", "Zigbee", "Dahua", "Energy Systems"];
+  const technologyStrip = isItalian
+    ? ["Controllo locale", "Home Assistant", "ESP32", "MQTT", "Reti e sicurezza", "Sistemi energetici"]
+    : ["Local control", "Home Assistant", "ESP32", "MQTT", "Networks and security", "Energy systems"];
   const consultingScenarios = isItalian
     ? [
         {
@@ -377,7 +378,7 @@ export function HomePage({ locale }: HomePageProps) {
           step: "02",
           title: "Architettura del sistema",
           description:
-            "Definizione del modello di controllo: Home Assistant, livelli di integrazione, struttura dei dati, interfacce operative e logica complessiva del sistema.",
+            "Definizione del modello di controllo, dei livelli di integrazione, della struttura dei dati, delle interfacce operative e della logica complessiva del sistema.",
         },
         {
           step: "03",
@@ -409,7 +410,7 @@ export function HomePage({ locale }: HomePageProps) {
           step: "02",
           title: "System architecture",
           description:
-            "The control structure is defined: Home Assistant, integration layers, key components, data flows, and operational interfaces.",
+            "The control structure is defined across integration layers, key components, data flows, and operational interfaces.",
         },
         {
           step: "03",
@@ -438,9 +439,9 @@ export function HomePage({ locale }: HomePageProps) {
             "Non necessariamente. In molti casi si lavora integrando l'impianto esistente e intervenendo solo dove ha senso dal punto di vista tecnico o funzionale. La valutazione corretta dipende sempre dall'architettura della casa, dai sistemi già presenti e dal livello di integrazione richiesto.",
         },
         {
-          question: "Perché usare Home Assistant invece di sistemi commerciali?",
+          question: "Perché privilegiare un’architettura locale e aperta?",
           answer:
-            "Perché consente un livello di controllo, integrazione e flessibilità molto superiore. Se progettato bene, Home Assistant permette di unificare ecosistemi diversi, mantenere una logica locale e costruire una smart home che non dipende dalle scelte di un singolo produttore.",
+            "Perché offre più controllo, continuità e libertà di integrazione. Quando è adatto al progetto, Home Assistant può essere uno degli strumenti usati per unificare ecosistemi diversi senza legare l’intero sistema alle scelte di un solo produttore.",
         },
         {
           question: "Il sistema funziona anche senza internet?",
@@ -465,9 +466,9 @@ export function HomePage({ locale }: HomePageProps) {
             "Not necessarily. In many cases the existing electrical system can be integrated, with targeted intervention only where it makes technical or functional sense. The right answer depends on the architecture of the home, the systems already in place, and the requested integration level.",
         },
         {
-          question: "Why use Home Assistant instead of commercial systems?",
+          question: "Why prioritize a local and open architecture?",
           answer:
-            "Because it allows a much higher level of control, integration, and flexibility. When designed properly, Home Assistant can unify different ecosystems, preserve local logic, and create a smart home that does not depend on one vendor's product decisions.",
+            "Because it provides more control, continuity, and integration freedom. When it fits the project, Home Assistant can be one of the tools used to unify different ecosystems without tying the entire system to one vendor's decisions.",
         },
         {
           question: "Does the system still work without internet?",
@@ -494,7 +495,7 @@ export function HomePage({ locale }: HomePageProps) {
         support:
           "Prima consulenza per architettura, integrazioni, fattibilità e strategia del sistema.",
         primary: "Richiedi una consulenza",
-        secondary: "Esplora i progetti",
+        secondary: "Scopri i servizi",
       }
     : {
         eyebrow: content.finalCta.eyebrow,
@@ -502,7 +503,7 @@ export function HomePage({ locale }: HomePageProps) {
         description: content.finalCta.description,
         support: "Initial consultation covering architecture, integrations, feasibility, and system strategy.",
         primary: content.finalCta.primary,
-        secondary: "Explore projects",
+        secondary: "Explore services",
       };
   const residentialPath = isItalian
     ? {
@@ -549,14 +550,14 @@ export function HomePage({ locale }: HomePageProps) {
                   {content.primaryCta}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href={getLocalizedPath(locale, "/projects")} className="button-secondary">
-                  {isItalian ? "Vedi i progetti" : "View projects"}
+                <Link href={getLocalizedPath(locale, "/services")} className="button-secondary">
+                  {content.secondaryCta}
                 </Link>
               </div>
               <p className="mt-5 text-xs uppercase tracking-[0.24em] text-white/40 sm:text-[0.78rem]">
                 {isItalian
-                  ? "Sistemi Home Assistant · Hardware ESP32 personalizzato · Intelligenza energetica · Visione JetGrid"
-                  : "Home Assistant systems · Custom ESP32 hardware · Energy intelligence · JetGrid vision"}
+                  ? "Controllo locale · Hardware ESP32 · Energia · Reti · Sicurezza"
+                  : "Local control · ESP32 hardware · Energy · Networks · Security"}
               </p>
               <div className="mt-9 grid gap-3 sm:grid-cols-3">
                 {heroStats.map((stat) => (
@@ -895,8 +896,8 @@ export function HomePage({ locale }: HomePageProps) {
                                     ? "Livello energetico"
                                     : "Energy Layer"
                                   : isItalian
-                                    ? "Visione futura"
-                                    : "Future Layer"}
+                                    ? "Reti e sicurezza"
+                                    : "Networks and Security"}
                           </h3>
                         </div>
                         <div className="rounded-[1.5rem] border border-cyan/15 bg-cyan/[0.08] p-5">
@@ -917,8 +918,8 @@ export function HomePage({ locale }: HomePageProps) {
                                     ? "Dati energetici tradotti in logiche operative utili."
                                     : "Energy data translated into useful operational logic."
                                   : isItalian
-                                    ? "Un posizionamento coerente verso il futuro del brand."
-                                    : "A coherent brand direction toward future infrastructure."}
+                                    ? "Servizi più stabili, protetti e semplici da mantenere."
+                                    : "More stable, protected, and maintainable services."}
                           </p>
                         </div>
                       </div>
@@ -1053,25 +1054,6 @@ export function HomePage({ locale }: HomePageProps) {
         </div>
       </section>
 
-      <section className="section-space pt-4">
-        <div className="container-shell">
-          <Reveal>
-            <SectionHeading
-              eyebrow={content.work.eyebrow}
-              title={content.work.title}
-              description={content.work.description}
-            />
-          </Reveal>
-          <div className="mt-12 grid gap-5 lg:grid-cols-2">
-            {shared.portfolioProjects.map((project, index) => (
-              <Reveal key={project.title} delay={index * 80}>
-                <ProjectCard {...project} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section-space pt-0">
         <div className="container-shell">
           <Reveal>
@@ -1086,7 +1068,7 @@ export function HomePage({ locale }: HomePageProps) {
                   {finalCtaContent.primary}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href={getLocalizedPath(locale, "/projects")} className="button-secondary">
+                <Link href={getLocalizedPath(locale, "/services")} className="button-secondary">
                   {finalCtaContent.secondary}
                 </Link>
               </div>

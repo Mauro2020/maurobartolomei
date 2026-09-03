@@ -40,7 +40,7 @@ export default function ServicesPage() {
               L’obiettivo è costruire un sistema di sicurezza domestica capace di leggere eventi,
               verificare contesti e attivare risposte intelligenti. In questo scenario, telecamere
               IP, videocitofonia, controllo accessi e piattaforme professionali come Dahua entrano
-              in un ecosistema più ampio, orchestrato da Home Assistant.
+              in un ecosistema più ampio, coordinato da un livello di controllo locale.
             </p>
           </div>
 
@@ -73,22 +73,22 @@ export default function ServicesPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan/15 bg-cyan/10 text-cyan">
                 <ShieldCheck className="h-6 w-6" />
               </div>
-              <h3 className="mt-6 text-xl font-semibold tracking-tight text-white">Automazioni di sicurezza con Home Assistant</h3>
+              <h3 className="mt-6 text-xl font-semibold tracking-tight text-white">Automazioni e flussi di sicurezza</h3>
               <p className="mt-3 text-sm leading-7 text-white/70">
-                Home Assistant coordina notifiche, presenza, allarmi, luci, chiusure e scenari di
-                sicurezza, trasformando gli eventi in azioni intelligenti e verificabili.
+                Il livello di controllo coordina notifiche, presenza, allarmi, luci, chiusure e
+                scenari di sicurezza, trasformando gli eventi in azioni intelligenti e verificabili.
               </p>
             </article>
           </div>
 
           <div className="mt-8 rounded-[1.75rem] border border-white/8 bg-white/[0.03] p-6">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-cyan">Esempi reali</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-cyan">Scenari applicativi</p>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
               <div className="rounded-2xl border border-white/8 bg-white/[0.025] p-5">
                 <h4 className="text-lg font-semibold text-white">Scenario ingresso non previsto</h4>
                 <p className="mt-3 text-sm leading-7 text-white/70">
                   Se il videocitofono rileva un evento fuori fascia oraria o in assenza dei
-                  residenti, Home Assistant può inviare una notifica con snapshot, attivare luci
+                  residenti, il sistema di controllo può inviare una notifica con snapshot, attivare luci
                   esterne e registrare l’evento come anomalia di sicurezza.
                 </p>
               </div>

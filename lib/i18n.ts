@@ -186,14 +186,12 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         { label: "Elettronica ESP32", href: "/custom-electronics" },
         { label: "Gestione Energia", href: "/energy-management" },
         { label: "Visione JetGrid", href: "/jetgrid-vision" },
-        { label: "Progetti", href: "/projects" },
-        { label: "Blog", href: "/blog" },
         { label: "Contatti", href: "/contact" },
       ],
     },
     footer: {
       eyebrow: "Bartolomei Systems",
-      title: "Architetture smart home con Home Assistant, elettronica ESP32 su misura e intelligenza energetica progettate come veri sistemi.",
+      title: "Architetture locali, elettronica su misura, energia, reti e sicurezza progettate come un unico sistema.",
       navTitle: "Navigazione",
       contactTitle: "Contatti",
       location: "Via Flavio Ottaviani, Foligno",
@@ -204,9 +202,9 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Home",
         description:
-          "Consulenza specialistica per sistemi smart home con Home Assistant, elettronica ESP32 personalizzata, monitoraggio energia e integrazioni avanzate.",
+          "Consulenza specialistica per architetture locali, integrazioni avanzate, elettronica ESP32, energia, reti e sicurezza.",
       },
-      heroBadge: "Home Assistant. ESP32. Energia. Reti. Sicurezza.",
+      heroBadge: "Architetture locali. ESP32. Energia. Reti. Sicurezza.",
       heroTitle: "Smart home progettate come infrastrutture intelligenti, non come semplici insiemi di dispositivi.",
       heroDescription:
         "Bartolomei Systems sviluppa architetture tecniche ad alta specializzazione: controllo locale, elettronica su misura, reti affidabili, energia, sicurezza e automazioni avanzate progettate come un unico sistema.",
@@ -228,11 +226,11 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         eyebrow: "Piattaforma",
         title: "Competenze tecniche integrate, non semplice installazione di dispositivi.",
         description:
-          "Il valore nasce da quattro aree che lavorano insieme: Home Assistant come piattaforma centrale, hardware ESP32 personalizzato, monitoraggio e automazione energetica, integrazioni avanzate costruite sull’ambiente reale.",
+          "Il valore nasce da più livelli che lavorano insieme: controllo locale, reti, hardware ESP32 personalizzato, monitoraggio energetico, sicurezza e integrazioni costruite sull’ambiente reale.",
         layers: [
           {
-            title: "Livello Controllo",
-            text: "Home Assistant diventa il centro operativo della casa: dashboard chiare, automazioni robuste e integrazioni progettate per durare.",
+            title: "Controllo e integrazione",
+            text: "Dati, interfacce e automazioni vengono coordinati localmente attraverso strumenti scelti in funzione del progetto.",
             icon: LayoutDashboard,
           },
           {
@@ -285,9 +283,9 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         eyebrow: "Inizia il prossimo progetto",
         title: "Costruisci un ambiente intelligente che oggi sia premium e domani sia già pronto.",
         description:
-          "Da sistemi Home Assistant di alto livello fino a concetti orientati a JetGrid, tutto parte da una direzione tecnica chiara.",
+          "Dalle integrazioni locali all’elettronica, dall’energia alle reti e alla sicurezza, tutto parte da una direzione tecnica chiara.",
         primary: "Avvia il progetto",
-        secondary: "Vedi i progetti",
+        secondary: "Scopri i servizi",
       },
       consultingModel: {
         eyebrow: "Metodo di consulenza",
@@ -333,13 +331,13 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Servizi",
         description:
-          "Servizi di consulenza per Home Assistant, automazioni evolute, elettronica ESP32 personalizzata, monitoraggio energia e integrazioni smart home avanzate.",
+          "Consulenza per architetture locali, automazioni evolute, reti, sicurezza, elettronica ESP32 e gestione intelligente dell’energia.",
       },
       hero: {
         eyebrow: "Servizi",
         title: "Dalla smart home avanzata all’integrazione tecnica su misura.",
         description:
-          "Il lavoro parte da quattro aree chiave: sistemi Home Assistant ben progettati, elettronica ESP32 personalizzata, gestione energetica intelligente e integrazioni evolute tra i dispositivi della casa.",
+          "Il lavoro unisce architettura di sistema, controllo locale, reti, sicurezza, elettronica ESP32, gestione energetica e integrazioni evolute tra impianti e dispositivi.",
         primaryCta: { label: "Parla del tuo progetto", href: "/contact" },
       },
     },
@@ -444,42 +442,29 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Progetti",
         description:
-          "Portfolio di progetti tra smart home, elettronica personalizzata, gestione energia e concept JetGrid.",
+          "Archivio dei progetti Bartolomei Systems in preparazione.",
       },
       hero: {
         eyebrow: "Progetti",
-        title: "Esempi di progetto e direzioni applicative selezionate.",
+        title: "I progetti saranno pubblicati quando potranno raccontare casi reali e documentati.",
         description:
-          "Questi progetti raccontano l’ampiezza del lavoro: abitazioni integrate, elettronica dedicata, intelligenza energetica e sistemi orientati al futuro.",
+          "Stiamo preparando una selezione essenziale di lavori reali, con contesto, obiettivi tecnici e risultati verificabili. Fino ad allora preferiamo non mostrare esempi generici.",
       },
     },
     blog: {
       seo: {
         title: "Blog",
         description:
-          "Approfondimenti su Home Assistant, smart home, dispositivi ESP32, gestione energia e visione JetGrid.",
+          "Area editoriale Bartolomei Systems in preparazione.",
       },
       hero: {
         eyebrow: "Blog",
-        title: "Note tecniche, riflessioni progettuali e approfondimenti di sistema.",
+        title: "Approfondimenti tecnici, quando avranno qualcosa di concreto da aggiungere.",
         description:
-          "Questa sezione è pensata come base editoriale per futuri contenuti su architetture di automazione, elettronica personalizzata, energia intelligente e visione JetGrid.",
+          "L’area editoriale è in preparazione. Pubblicheremo contenuti curati su integrazioni, elettronica, energia, reti e sicurezza senza riempire il sito di articoli provvisori.",
       },
-      articleLabel: "Bozza articolo",
-      posts: [
-        {
-          title: "Perché le smart home locali contano ancora",
-          excerpt: "Privacy, latenza, resilienza e controllo nel tempo restano alla base di un’automazione domestica seria.",
-        },
-        {
-          title: "Come progettare dashboard che le persone usano davvero",
-          excerpt: "Una buona interfaccia riduce attrito. Una grande interfaccia rende ovvio un sistema complesso.",
-        },
-        {
-          title: "Dal fotovoltaico alla logica di ricarica EV",
-          excerpt: "L’automazione energetica diventa preziosa quando produzione, accumulo e ricarica lavorano come un unico sistema.",
-        },
-      ],
+      articleLabel: "In preparazione",
+      posts: [],
     },
     contact: {
       seo: {
@@ -514,8 +499,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
     shared: {
       services: [
         {
-          title: "Architettura Home Assistant",
-          description: "Progettazione completa di sistemi smart home con Home Assistant: architettura solida, integrazioni affidabili e controllo centralizzato della casa.",
+          title: "Architettura e integrazioni locali",
+          description: "Progettazione del sistema di controllo, dei flussi dati e delle integrazioni locali, utilizzando Home Assistant quando è la piattaforma adatta al contesto.",
           icon: Home,
         },
         {
@@ -524,8 +509,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: LayoutDashboard,
         },
         {
-          title: "Dashboard Personalizzate",
-          description: "Dashboard Home Assistant per tablet, pannelli a parete e mobile con interfacce chiare, leggibili e orientate all’uso quotidiano.",
+          title: "Reti e affidabilità operativa",
+          description: "Segmentazione, connettività, servizi locali e continuità progettati per mantenere integrazioni e automazioni stabili nel tempo.",
           icon: LayoutDashboard,
         },
         {
@@ -539,8 +524,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: Orbit,
         },
         {
-          title: "Visione JetGrid",
-          description: "Riflessione tecnologica orientata al futuro per piattaforme resilienti, reti intelligenti e infrastrutture connesse.",
+          title: "Sicurezza integrata",
+          description: "Accessi, allarmi, videocontrollo, presenza e notifiche coordinati in flussi affidabili, comprensibili e verificabili.",
           icon: Orbit,
         },
       ],
@@ -566,32 +551,7 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: Orbit,
         },
       ],
-      portfolioProjects: [
-        {
-          title: "Sistema di Controllo Domestico Integrato",
-          category: "Domotica",
-          summary:
-            "Architettura Home Assistant locale per coordinare illuminazione, clima, presenza, sicurezza e media come un unico sistema di controllo integrato.",
-        },
-        {
-          title: "Centro di Comando Energetico Personalizzato",
-          category: "Gestione Energia",
-          summary:
-            "Monitoraggio energetico in tempo reale con fotovoltaico, batterie, carichi prioritari e logiche di ricarica EV costruite sul profilo reale dell'abitazione.",
-        },
-        {
-          title: "Rete di Sensori ESP32",
-          category: "Elettronica Personalizzata",
-          summary:
-            "Rete di sensori e moduli ESP32 personalizzati per ambienti complessi, integrazioni non standard e raccolta dati distribuita con controllo locale.",
-        },
-        {
-          title: "Concept Strategico JetGrid",
-          category: "Tecnologia Futura",
-          summary:
-            "Una direzione progettuale che estende la logica della smart home verso infrastrutture connesse, energia distribuita e coordinamento intelligente tra sistemi.",
-        },
-      ],
+      portfolioProjects: [],
     },
   },
   en: {
@@ -605,14 +565,12 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         { label: "Custom Electronics", href: "/custom-electronics" },
         { label: "Energy Management", href: "/energy-management" },
         { label: "JetGrid Vision", href: "/jetgrid-vision" },
-        { label: "Projects", href: "/projects" },
-        { label: "Blog", href: "/blog" },
         { label: "Contact", href: "/contact" },
       ],
     },
     footer: {
       eyebrow: "Bartolomei Systems",
-      title: "Advanced smart-home architecture, custom electronics, and future-oriented infrastructure.",
+      title: "Local architectures, custom electronics, energy, networks, and security designed as one system.",
       navTitle: "Navigation",
       contactTitle: "Contact",
       location: "Via Flavio Ottaviani, Foligno",
@@ -623,9 +581,9 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Home",
         description:
-          "Consulting for Home Assistant, advanced home automation, custom ESP32 hardware, intelligent energy management, and JetGrid vision.",
+          "Specialist consulting for local architectures, advanced integrations, custom ESP32 electronics, energy, networks, and security.",
       },
-      heroBadge: "Home Assistant. ESP32. Energy. Networks. Security.",
+      heroBadge: "Local architectures. ESP32. Energy. Networks. Security.",
       heroTitle: "Intelligent living systems for homes that feel a generation ahead.",
       heroDescription:
         "Bartolomei Systems develops highly specialized technical architectures: local control, custom electronics, dependable networks, energy, security, and advanced automation designed as one coherent system.",
@@ -647,11 +605,11 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         eyebrow: "Platform",
         title: "A multi-layer technology practice, not a simple installation service.",
         description:
-          "The value comes from connecting interface design, embedded hardware, and energy logic into one coherent operating system for the home.",
+          "The value comes from connecting local control, networking, embedded hardware, energy, security, and real-world integrations into one coherent system.",
         layers: [
           {
-            title: "Control Layer",
-            text: "Home Assistant dashboards and automation logic designed like a premium software product.",
+            title: "Control and integration",
+            text: "Data, interfaces, and automation are coordinated locally through tools selected around the project.",
             icon: LayoutDashboard,
           },
           {
@@ -704,9 +662,9 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         eyebrow: "Start the next build",
         title: "Build a smart environment that feels premium now and future-ready later.",
         description:
-          "From flagship Home Assistant systems to JetGrid-oriented infrastructure ideas, the work begins with a clear technical direction.",
+          "From local integrations and electronics to energy, networks, and security, the work begins with a clear technical direction.",
         primary: "Start your project",
-        secondary: "View portfolio",
+        secondary: "Explore services",
       },
       consultingModel: {
         eyebrow: "Consulting model",
@@ -752,13 +710,13 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Services",
         description:
-          "Consulting services for Home Assistant design, advanced automation, ESP32 hardware, energy monitoring, and JetGrid strategy.",
+          "Consulting for local architectures, advanced automation, networks, security, ESP32 electronics, and intelligent energy management.",
       },
       hero: {
         eyebrow: "Services",
-        title: "From smart homes to future infrastructure.",
+        title: "From advanced smart homes to tailored technical integration.",
         description:
-          "Two main domains define the work: premium smart-home systems and forward-looking technology strategy through JetGrid.",
+          "The work combines system architecture, local control, networking, security, ESP32 electronics, energy management, and dependable integration across plants and devices.",
         primaryCta: { label: "Discuss a project", href: "/contact" },
       },
     },
@@ -863,42 +821,29 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Projects",
         description:
-          "Portfolio of smart home, custom electronics, energy management, and JetGrid concept projects.",
+          "Bartolomei Systems project archive in preparation.",
       },
       hero: {
         eyebrow: "Projects",
-        title: "Selected project directions and implementation examples.",
+        title: "Projects will be published when they can document real work.",
         description:
-          "These project narratives communicate the range of work: integrated homes, embedded hardware, energy intelligence, and future systems.",
+          "We are preparing a focused selection of real work with context, technical objectives, and verifiable outcomes. Until then, we prefer not to show generic examples.",
       },
     },
     blog: {
       seo: {
         title: "Blog",
         description:
-          "Insights on Home Assistant, smart homes, ESP32 devices, energy management, and JetGrid future technology thinking.",
+          "Bartolomei Systems editorial area in preparation.",
       },
       hero: {
         eyebrow: "Blog",
-        title: "Technical notes, project thinking, and system design insights.",
+        title: "Technical insight, when there is something concrete to add.",
         description:
-          "This section is structured as a content base for future articles on automation architecture, custom electronics, energy intelligence, and JetGrid concepts.",
+          "The editorial area is in preparation. We will publish carefully developed material on integrations, electronics, energy, networks, and security without filling the site with provisional articles.",
       },
-      articleLabel: "Article Draft",
-      posts: [
-        {
-          title: "Why Local Smart Homes Still Matter",
-          excerpt: "Privacy, latency, resilience, and long-term ownership remain the foundation of serious home automation design.",
-        },
-        {
-          title: "Designing Dashboards People Actually Use",
-          excerpt: "Good control surfaces reduce friction. Great ones make complex systems feel obvious.",
-        },
-        {
-          title: "From Photovoltaics to EV Charging Logic",
-          excerpt: "Energy automation becomes valuable when production, storage, and charging decisions work as one system.",
-        },
-      ],
+      articleLabel: "In preparation",
+      posts: [],
     },
     contact: {
       seo: {
@@ -932,8 +877,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
     shared: {
       services: [
         {
-          title: "Home Assistant Architecture",
-          description: "Complete system design for reliable, private, and deeply integrated smart homes built around Home Assistant.",
+          title: "Local architecture and integrations",
+          description: "Design of control systems, data flows, and local integrations, using Home Assistant when it is the right platform for the context.",
           icon: Home,
         },
         {
@@ -942,8 +887,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: LayoutDashboard,
         },
         {
-          title: "Custom Dashboards",
-          description: "Operator-grade dashboards for tablets, wall panels, and mobile devices with clear UX and actionable data.",
+          title: "Networks and operational reliability",
+          description: "Segmentation, connectivity, local services, and continuity designed to keep integrations and automation stable over time.",
           icon: LayoutDashboard,
         },
         {
@@ -957,8 +902,8 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: Orbit,
         },
         {
-          title: "JetGrid Vision",
-          description: "Forward-looking technology thinking for resilient platforms, intelligent networks, and connected infrastructure.",
+          title: "Integrated security",
+          description: "Access, alarms, video, presence, and notifications coordinated through dependable, understandable, and verifiable workflows.",
           icon: Orbit,
         },
       ],
@@ -984,32 +929,7 @@ export const locales: Record<Locale, LocaleSiteContent> = {
           icon: Orbit,
         },
       ],
-      portfolioProjects: [
-        {
-          title: "Whole-Home Control System",
-          category: "Home Automation",
-          summary:
-            "Local Home Assistant architecture coordinating lighting, climate, occupancy, security, and media as one integrated control system.",
-        },
-        {
-          title: "Custom Energy Command Center",
-          category: "Energy Management",
-          summary:
-            "Real-time energy monitoring with solar production, battery state, household loads, and EV charging logic shaped around the home's actual usage profile.",
-        },
-        {
-          title: "ESP32 Sensor Network",
-          category: "Custom Electronics",
-          summary:
-            "A custom ESP32 sensor and relay network for complex environments, non-standard integrations, and distributed data collection with local control.",
-        },
-        {
-          title: "JetGrid Strategy Concept",
-          category: "Future Technology",
-          summary:
-            "A strategic direction that extends smart-home thinking toward connected infrastructure, distributed energy, and coordinated intelligence across systems.",
-        },
-      ],
+      portfolioProjects: [],
     },
   },
 };

@@ -39,7 +39,7 @@ export default function ServicesPageEn() {
               The goal is to design a residential security system that can interpret events, verify
               context, and trigger intelligent responses. In this model, IP cameras, video
               doorbells, access control, and professional platforms such as Dahua become part of a
-              broader ecosystem orchestrated through Home Assistant.
+              broader ecosystem coordinated through a local control layer.
             </p>
           </div>
 
@@ -72,22 +72,22 @@ export default function ServicesPageEn() {
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan/15 bg-cyan/10 text-cyan">
                 <ShieldCheck className="h-6 w-6" />
               </div>
-              <h3 className="mt-6 text-xl font-semibold tracking-tight text-white">Security automations with Home Assistant</h3>
+              <h3 className="mt-6 text-xl font-semibold tracking-tight text-white">Security automation and workflows</h3>
               <p className="mt-3 text-sm leading-7 text-white/70">
-                Home Assistant coordinates notifications, presence states, alarms, lighting, closures,
-                and security scenarios, turning events into intelligent and verifiable actions.
+                The control layer coordinates notifications, presence states, alarms, lighting,
+                closures, and security scenarios, turning events into intelligent and verifiable actions.
               </p>
             </article>
           </div>
 
           <div className="mt-8 rounded-[1.75rem] border border-white/8 bg-white/[0.03] p-6">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-cyan">Real-world examples</p>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-cyan">Application scenarios</p>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
               <div className="rounded-2xl border border-white/8 bg-white/[0.025] p-5">
                 <h4 className="text-lg font-semibold text-white">Unexpected entry scenario</h4>
                 <p className="mt-3 text-sm leading-7 text-white/70">
                   If the video doorbell detects activity outside expected time windows or while the
-                  residents are away, Home Assistant can send a snapshot notification, trigger
+                  residents are away, the local control system can send a snapshot notification, trigger
                   exterior lighting, and log the event as a security anomaly.
                 </p>
               </div>
