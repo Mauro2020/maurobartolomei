@@ -205,10 +205,10 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         description:
           "Consulenza specialistica per sistemi smart home con Home Assistant, elettronica ESP32 personalizzata, monitoraggio energia e integrazioni avanzate.",
       },
-      heroBadge: "Smart Home. Energia. JetGrid.",
+      heroBadge: "ABEDOME. Smart Home. Energia. JetGrid.",
       heroTitle: "Smart home progettate come infrastrutture intelligenti, non come semplici insiemi di dispositivi.",
       heroDescription:
-        "Home Assistant coordina il sistema, l’elettronica ESP32 personalizzata estende ciò che il mercato standard non copre, l’energia viene letta e automatizzata con criterio, mentre JetGrid definisce una visione coerente verso ciò che viene dopo.",
+        "ABEDOME porta queste competenze nella casa: Home Assistant coordina il sistema, l’elettronica ESP32 estende ciò che il mercato standard non copre e l’energia viene letta e automatizzata con criterio. JetGrid definisce la visione verso ciò che viene dopo.",
       primaryCta: "Prenota una consulenza",
       secondaryCta: "Scopri i servizi",
       startupMetrics: [
@@ -346,17 +346,17 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Domotica",
         description:
-          "Progettazione di sistemi smart home con Home Assistant, automazioni avanzate, dashboard personalizzate e integrazioni affidabili.",
+          "ABEDOME e progettazione di sistemi smart home con Home Assistant, automazioni locali, dashboard personalizzate e integrazioni affidabili.",
       },
       hero: {
         eyebrow: "Domotica",
         title: "Sistemi smart home con Home Assistant progettati per essere chiari, stabili e davvero utili.",
         description:
-          "Home Assistant è il cuore della smart home: coordina dispositivi, sensori, dashboard e automazioni in un sistema coerente, locale e pensato per funzionare bene ogni giorno.",
+          "Home Assistant è il cuore tecnico della smart home. ABEDOME traduce questa architettura in un sistema coordinato per energia, comfort, controllo e sicurezza.",
         primaryCta: { label: "Progetta la tua smart home", href: "/contact" },
       },
       heading: "Cosa comprende",
-      body: "La consulenza copre l’intero sistema smart home: architettura Home Assistant, scelta delle integrazioni, logiche di automazione, dashboard operative e struttura tecnica necessaria per mantenere l’impianto stabile e leggibile nel tempo.",
+      body: "La consulenza copre l’intero sistema smart home: architettura Home Assistant, scelta delle integrazioni, logiche di automazione, dashboard operative e struttura tecnica necessaria per mantenere l’impianto stabile nel tempo. Per le abitazioni, queste competenze convergono in ABEDOME.",
       features: [
         "Architettura Home Assistant locale e affidabile",
         "Automazioni avanzate per luci, clima, presenza e sicurezza",
@@ -623,10 +623,10 @@ export const locales: Record<Locale, LocaleSiteContent> = {
         description:
           "Consulting for Home Assistant, advanced home automation, custom ESP32 hardware, intelligent energy management, and JetGrid vision.",
       },
-      heroBadge: "Smart Home. Energy. JetGrid.",
+      heroBadge: "ABEDOME. Smart Home. Energy. JetGrid.",
       heroTitle: "Intelligent living systems for homes that feel a generation ahead.",
       heroDescription:
-        "Premium consulting for Home Assistant, custom ESP32 hardware, advanced automation, and energy systems shaped with the visual precision of a product launch and the rigor of real engineering.",
+        "ABEDOME brings this expertise into the home: Home Assistant, custom ESP32 hardware, advanced automation, energy, comfort, and security designed as one coherent system.",
       primaryCta: "Book a consultation",
       secondaryCta: "Explore services",
       startupMetrics: [
@@ -764,17 +764,17 @@ export const locales: Record<Locale, LocaleSiteContent> = {
       seo: {
         title: "Home Automation",
         description:
-          "Premium Home Assistant system design, advanced automations, and custom dashboards for advanced smart homes.",
+          "ABEDOME and Home Assistant system design, local automation, custom dashboards, and dependable smart-home integrations.",
       },
       hero: {
         eyebrow: "Home Automation",
         title: "Smart homes engineered to be calm, precise, and dependable.",
         description:
-          "The objective is a house that responds intelligently without becoming noisy or fragile. Home Assistant is used as the orchestration layer for a system designed around real daily behavior.",
+          "Home Assistant provides the technical control layer. ABEDOME turns it into a coordinated residential system spanning energy, comfort, control, and security.",
         primaryCta: { label: "Plan your smart home", href: "/contact" },
       },
       heading: "What this includes",
-      body: "Smart-home consulting covers the complete system lifecycle: architecture, device selection, dashboard design, automation logic, and the operational layer required to keep the installation stable over time.",
+      body: "Smart-home consulting covers architecture, device selection, dashboards, automation logic, and the operational layer required for long-term stability. For residential projects, these capabilities come together through ABEDOME.",
       features: [
         "Home Assistant architecture and local-first integrations",
         "Advanced lighting, climate, and presence automations",

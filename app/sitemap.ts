@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { SITE_URL } from "@/lib/brand";
+
 const routes = [
   "",
   "/about",
@@ -25,7 +27,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: `https://example.com${route}`,
+    url: `${SITE_URL}${route}`,
     lastModified: new Date(),
   }));
 }

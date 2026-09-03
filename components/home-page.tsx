@@ -17,6 +17,7 @@ import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
+import { ABEDOME_URL } from "@/lib/brand";
 import { getLocalizedPath, locales, type AppPath, type Locale } from "@/lib/i18n";
 
 type HomePageProps = {
@@ -204,6 +205,31 @@ export function HomePage({ locale }: HomePageProps) {
       ];
 
   const servicePreview = shared.services.slice(0, 5);
+  const abedomeContent = isItalian
+    ? {
+        eyebrow: "Progetto residenziale",
+        title: "ABEDOME: energia, comfort, controllo e sicurezza progettati come un solo sistema.",
+        description:
+          "ABEDOME è il progetto di Bartolomei Systems dedicato alla casa. Coordina fotovoltaico, accumulo, climatizzazione, domotica Home Assistant, accessi e sicurezza con controllo locale e un percorso tecnico costruito sull’abitazione reale.",
+        features: [
+          "Impianti e automazioni coordinati prima dell’acquisto dei componenti",
+          "Controllo locale, dati comprensibili e continuità operativa",
+          "Progettazione su misura, espandibile insieme alla casa",
+        ],
+        cta: "Visita ABEDOME",
+      }
+    : {
+        eyebrow: "Residential project",
+        title: "ABEDOME: energy, comfort, control, and security designed as one system.",
+        description:
+          "ABEDOME is the Bartolomei Systems project dedicated to the home. It coordinates solar, storage, climate, Home Assistant automation, access, and security through local control and a design process grounded in the real building.",
+        features: [
+          "Systems and automations coordinated before components are purchased",
+          "Local control, understandable data, and operational continuity",
+          "A tailored architecture designed to evolve with the home",
+        ],
+        cta: "Visit ABEDOME",
+      };
   const architectureLayers = isItalian
     ? [
         {
@@ -687,6 +713,43 @@ export function HomePage({ locale }: HomePageProps) {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section-space pt-0">
+        <div className="container-shell">
+          <Reveal>
+            <div className="relative overflow-hidden rounded-[2rem] border border-cyan/20 bg-[linear-gradient(135deg,rgba(52,217,255,0.12),rgba(255,255,255,0.035)_48%,rgba(7,16,29,0.9))] p-8 sm:p-10 lg:p-12">
+              <div className="absolute -right-20 -top-24 h-72 w-72 rounded-full bg-cyan/10 blur-3xl" />
+              <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+                <div>
+                  <p className="section-label">{abedomeContent.eyebrow}</p>
+                  <p className="mt-5 text-sm font-semibold uppercase tracking-[0.3em] text-cyan">ABEDOME</p>
+                  <h2 className="section-title mt-4 max-w-3xl">{abedomeContent.title}</h2>
+                  <p className="section-copy mt-6 max-w-[46rem]">{abedomeContent.description}</p>
+                </div>
+                <div>
+                  <ul className="grid gap-3 text-sm leading-7 text-white/75">
+                    {abedomeContent.features.map((feature) => (
+                      <li key={feature} className="flex gap-3 rounded-2xl border border-white/8 bg-black/10 px-4 py-3">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={ABEDOME_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button-primary mt-6"
+                  >
+                    {abedomeContent.cta}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

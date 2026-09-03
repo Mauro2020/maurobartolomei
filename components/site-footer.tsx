@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ADDRESS_DISPLAY, BRAND_NAME, PHONE_DISPLAY, PHONE_LINK, WHATSAPP_URL } from "@/lib/brand";
+import { ABEDOME_URL, ADDRESS_DISPLAY, BRAND_NAME, PHONE_DISPLAY, PHONE_LINK, WHATSAPP_URL } from "@/lib/brand";
 import { getLocaleFromPath, getLocalizedPath, locales } from "@/lib/i18n";
 
 export function SiteFooter() {
@@ -59,6 +59,16 @@ export function SiteFooter() {
               </p>
               <p>{content.footer.description}</p>
               <p>{locale === "it" ? "Consulenza, progettazione e architettura di sistema per smart home, energia e sicurezza integrata." : "Consulting, design, and system architecture across smart homes, energy, and integrated security."}</p>
+              <p>
+                <a
+                  href={ABEDOME_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-cyan transition hover:text-white"
+                >
+                  {locale === "it" ? "Scopri ABEDOME ↗" : "Discover ABEDOME ↗"}
+                </a>
+              </p>
             </div>
           </div>
         </div>
