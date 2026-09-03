@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import { headers } from "next/headers";
 import type { ReactNode } from "react";
 
 import { BRAND_NAME, SITE_URL } from "@/lib/brand";
@@ -44,13 +45,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
+  const requestHeaders = await headers();
+  const locale = requestHeaders.get("x-bartolomei-locale") === "en" ? "en" : "it";
+
   return (
-    <html lang="en" className={`${manrope.variable} ${spaceGrotesk.variable}`}>
+    <html lang={locale} className={`${manrope.variable} ${spaceGrotesk.variable}`}>
       <body className="font-[var(--font-body)]">
         <div className="min-h-screen">
           <SiteHeader />
