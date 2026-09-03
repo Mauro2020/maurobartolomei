@@ -36,7 +36,7 @@ Before that migration:
 
 1. Take a VM snapshot and a filesystem backup of the legacy application.
 2. Create the dedicated application user and `/srv/bartolomeisystems` directories.
-3. Install a repository-scoped, read-only GitHub deploy key for that user.
+3. Confirm that the application user can read the public GitHub repository over HTTPS. If the repository becomes private, install a repository-scoped, read-only deploy key and override `BARTOLOMEI_REPOSITORY`.
 4. Create `shared/production.env` without printing its values and set mode `0600`.
 5. Build the first release and create `current` as a symlink to it.
 6. Start only the `bartolomeisystems` entry from `ecosystem.config.cjs`.
@@ -44,6 +44,20 @@ Before that migration:
 8. Keep the legacy deployment intact until at least one subsequent release and rollback have been tested.
 
 Do not change reverse-proxy configuration as part of this migration.
+
+The first migration was completed on 2026-09-03. Production now runs from `/srv/bartolomeisystems/current` as the dedicated `bartolomeisystems` user. The legacy `/var/www/bartolomeisystems` copy remains available as a temporary recovery source and is not part of normal deploys.
+
+## Boot service
+
+PM2 7 does not create the PID file expected by its generated `Type=forking` systemd unit on this VM. Install the repository unit instead:
+
+```bash
+sudo install -o root -g root -m 0644 ops/pm2-bartolomeisystems.service /etc/systemd/system/pm2-bartolomeisystems.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now pm2-bartolomeisystems
+```
+
+This unit operates only on `/srv/bartolomeisystems/.pm2`. The existing root PM2 service that hosts unrelated applications must not be changed or reloaded.
 
 ## Deploy an approved commit
 
@@ -53,7 +67,7 @@ Run as the dedicated application user:
 ./ops/deploy-release.sh <full-40-character-commit-sha>
 ```
 
-The commit should be on the protected default branch and have a successful CI run. The script refuses root, concurrent runs, short refs, insecure environment-file permissions, duplicate releases, and deployments before the one-time migration is complete.
+The commit should be on the protected default branch and have a successful CI run. The default repository URL is public HTTPS, so production needs no GitHub secret. The script refuses root, concurrent runs, short refs, insecure environment-file permissions, duplicate releases, and deployments before the one-time migration is complete.
 
 ## Roll back
 

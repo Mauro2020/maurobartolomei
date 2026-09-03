@@ -1,0 +1,21 @@
+[Unit]
+Description=Bartolomei Systems PM2 process manager
+Documentation=https://pm2.keymetrics.io/
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=bartolomeisystems
+WorkingDirectory=/srv/bartolomeisystems
+Environment=HOME=/srv/bartolomeisystems
+Environment=PM2_HOME=/srv/bartolomeisystems/.pm2
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/usr/lib/node_modules/pm2/bin/pm2 resurrect
+ExecStop=/usr/lib/node_modules/pm2/bin/pm2 kill
+RemainAfterExit=yes
+TimeoutStartSec=30
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -5,7 +5,7 @@ umask 077
 
 readonly APP_NAME="bartolomeisystems"
 readonly APP_ROOT="${BARTOLOMEI_APP_ROOT:-/srv/bartolomeisystems}"
-readonly REPOSITORY="${BARTOLOMEI_REPOSITORY:-git@github.com:Mauro2020/maurobartolomei.git}"
+readonly REPOSITORY="${BARTOLOMEI_REPOSITORY:-https://github.com/Mauro2020/maurobartolomei.git}"
 readonly APP_PORT="${BARTOLOMEI_APP_PORT:-3000}"
 readonly CANARY_PORT="${BARTOLOMEI_CANARY_PORT:-3100}"
 
