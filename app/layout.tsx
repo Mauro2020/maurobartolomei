@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import { headers } from "next/headers";
+import Script from "next/script";
 import type { ReactNode } from "react";
 
 import { BRAND_NAME, SITE_URL } from "@/lib/brand";
@@ -56,6 +57,13 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${manrope.variable} ${spaceGrotesk.variable}`}>
       <body className="font-[var(--font-body)]">
+        <Script
+          id="umami-analytics"
+          src="https://analytics.casaos.it/script.js"
+          data-website-id="dcfb642a-1f2d-4ef9-8acb-76d0b5786a4d"
+          data-domains="bartolomeisystems.com"
+          strategy="afterInteractive"
+        />
         <div className="min-h-screen">
           <SiteHeader />
           <main>{children}</main>
