@@ -1,0 +1,33 @@
+# Project-scoped least-privilege profile. Production access is intentionally
+# excluded and remains a separately approved operation.
+approval_policy = "on-request"
+approvals_reviewer = "auto_review"
+default_permissions = "bartolomeisystems-workspace"
+
+[features]
+network_proxy = true
+
+[permissions.bartolomeisystems-workspace]
+description = "Edit and validate Bartolomei Systems without production access."
+extends = ":workspace"
+
+[permissions.bartolomeisystems-workspace.filesystem.":workspace_roots"]
+"**/.env" = "deny"
+"**/.env.local" = "deny"
+"**/.env.production" = "deny"
+"**/.env.development" = "deny"
+"**/.env.test" = "deny"
+"**/.env.*.local" = "deny"
+"**/*.pem" = "deny"
+"**/*.key" = "deny"
+
+[permissions.bartolomeisystems-workspace.network]
+enabled = true
+
+[permissions.bartolomeisystems-workspace.network.domains]
+"github.com" = "allow"
+"api.github.com" = "allow"
+"objects.githubusercontent.com" = "allow"
+"registry.npmjs.org" = "allow"
+"fonts.googleapis.com" = "allow"
+"fonts.gstatic.com" = "allow"
