@@ -72,7 +72,7 @@ trap stop_canary EXIT
 printf 'Starting isolated canary on port %s\n' "${CANARY_PORT}"
 (
   cd "${RELEASE_DIR}"
-  NODE_ENV=production node_modules/.bin/next start --hostname 127.0.0.1 --port "${CANARY_PORT}"
+  exec env NODE_ENV=production node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port "${CANARY_PORT}"
 ) >"${LOG_DIR}/canary-${COMMIT_SHA}.log" 2>&1 &
 canary_pid="$!"
 
